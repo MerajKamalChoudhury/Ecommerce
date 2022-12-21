@@ -1,46 +1,42 @@
-import React, {useEffect} from 'react'
-import {useSelector, useDispatch} from 'react-redux'
-import axios from 'axios'
-import { setProducts } from '../../redux/actions/productActions'
-import ProductComponent from '../ProductComponent/ProductComponent'
-import "./ProductListing.css"
-import { Heading } from '../Heading/Heading'
+import styled from "styled-components";
+import { Alldata } from "../Alldata";
+import Product from "../Extra/Product";
+
+
+
+const Container = styled.div`
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
+
+const Heading =styled.h1`
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.7rem;
+    border-bottom: 3px solid var(--light-purple);
+    text-align: center;
+    align-items: center;
+    color: var(--black);
+`;
 
 const ProductListing = () => {
-    // const [loader, setLoader] = useState(false)
-    // const [errorHandling, setErrorHandling] = useState(false)
-    const products = useSelector((state) => state)
-    const dispatch = useDispatch()
+  return (
+     <>
+    <Heading >
+        Features Products
+    </Heading>
+    
+    <Container>
+      {Alldata.map((item) => (
+        <Product item={item} key={item.id} />
+      ))}
+    </Container>
+    </>
+  );
+};
 
-
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            // setLoader(true)
-            const response = await axios.get("https://fakestoreapi.com/products")
-                .catch((err) => {
-                    console.log("err", err)
-                    // setErrorHandling(true)
-                })
-            // setLoader(false)
-            dispatch(setProducts(response.data))
-        }
-        fetchProducts()
-    }, [dispatch])
- 
-
-
-
-    return (
-       <>
-        <Heading heading="Features Product" />  
-        {
-            products.length === 0 ?  <h1>Loading</h1> : <div className='product__listing__container'>
-            <ProductComponent />
-        </div>
-        }
-       </>
-    )
-}
-
-export default ProductListing
+export default ProductListing;

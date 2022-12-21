@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
 .navbar__logo{
     text-decoration: none;
     list-style: none;
     color: var(--light-purple);
     font-weight: bold;
+    font-size: 40px;
+    font-family: 'Rubik Gemstones', cursive;
     
 }
 .navbar__logo:hover{

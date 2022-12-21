@@ -14,13 +14,13 @@ const Home = () => {
           <div >
             <h3 className='home__main__container-firstHeading'>Trending Items</h3>
             <h1 className='home__main__container-mainHeading'>Lastest Fashion Sale</h1>
-            <h3 className='home__main__container-priceHeading'>Starting at <span>$20.00</span></h3>
+            <h3 className='home__main__container-priceHeading'>Starting at <span>₹299.00</span></h3>
           </div>
           <AppButton title = "Shop Now" />
         </div>
 
         <div className='home__main__container__right'>
-          <img src='images/home.png' alt='homebg' className='home__main__container__right-img' /></div>
+          <img src='https://i.ibb.co/qk5YRyS/img.jpg' alt='homebg' className='home__main__container__right-img' /></div>
       </div>
       <ProductListing />
      
