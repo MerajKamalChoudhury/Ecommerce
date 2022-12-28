@@ -1,22 +1,22 @@
 export const Happpy = [
     {
       id: 1,
-      img: "https://i.ibb.co/SrSngqY/IMG-20221218-WA0002.jpg" ,
-      title: "happy",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "f5fafd",
+      img: "./Images/zara.jpg" ,
+      // title: "HAPPY",
+      // desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      // bg: "f5fafd",
     },
     {
       id: 2,
       img: "https://i.ibb.co/PcKtrPH/IMG-20221218-WA0003.jpg",
-      title: "AUTUMN COLLECTION",
+      title: "NEW ARRIVALS",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
     {
       id: 3,
       img: "https://i.ibb.co/8DjQpKL/IMG-20221218-WA0004.jpg",
-      title: "LOUNGEWEAR LOVE",
+      title: "KID'S CHOICE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
     },
@@ -112,6 +112,21 @@ export const Happpy = [
     {
       id:3,
       img:"https://i.ibb.co/7b5LhdB/IMG-20221218-WA0016.jpg",
+    },
+    
+  ]
+  export const slider = [
+    {
+      id:1,
+      img:"./Images/img2.jpg",
+    },
+    {
+      id:2,
+      img:"./Images/img3.jpg",
+    },
+    {
+      id:3,
+      img:"./Images/img4.jpg",
     },
     
   ]

@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import AppNavbar from './Component/AppNavbar/AppNavbar'
 import Footer from './Component/Footer/Footer'
@@ -14,11 +13,25 @@ import Bloke from './Component/Pages/Bloke' ;
 import Lilbee from './Component/Pages/Lilbee';
 import Hunar from './Component/Pages/Hunar';
 import Pants from './Component/Pages/Pants';
+// import Slider from './Component/Extra/Slider';
+// import Backdrop from './Component/Sidedrawer/Backdrop';
+// import Sidebar from './Component/Sidedrawer/Sidebar';
+// import Toolbar from './Component/Sidedrawer/Toolbar';
+
+
+// import ProductComponent from "./Component/ProductComponent/ProductComponent"
 
 function App() {
+  
+
+ 
+
   return (
     <>
-      <AppNavbar />
+    <AppNavbar/> 
+       
+    
+       
       <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path='product/:productId' element={<ProductDetails />} />

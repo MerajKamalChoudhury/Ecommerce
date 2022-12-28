@@ -31,6 +31,7 @@ import {
     justify-content: center;
     background-color: #f5fbfd;
     position: relative;
+    z-index: 1;
   
     &:hover ${Info}{
       opacity: 1;
@@ -43,6 +44,7 @@ import {
     border-radius: 50%;
     background-color: white;
     position: absolute;
+    z-index: 1;
   `;
   
   const Image = styled.img`

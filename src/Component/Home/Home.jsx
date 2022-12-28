@@ -2,12 +2,14 @@ import React from 'react'
 import "./Home.css"
 import AppButton from '../AppButton/AppButton'
 import ProductListing  from "../ProductListing/ProductListing"
+import Slider from '../Extra/Slider'
 
 
 
 const Home = () => {
   return (
     <>
+    <Slider/> 
       <div className="home__main__container">
 
         <div className='home__main__container__left'>

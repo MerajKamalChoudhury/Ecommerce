@@ -4,7 +4,7 @@ const Footer = () => {
   return(
     <>
       <div className="footer">
-        <div>&copy;	Zara Shopping Store</div>
+        <div>&copy;	happy shopping store</div>
       </div>
     </>
   )
