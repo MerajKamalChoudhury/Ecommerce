@@ -23,7 +23,8 @@ const AppNavbar = () => {
   };
 
   return (
-    <>
+    <div className="navfixed">
+    
       <Navbar expand="lg" className="navbarColor">
         <Container fluid>
           <Toolbar openSidebar={toggleSidebar} />
@@ -49,7 +50,7 @@ const AppNavbar = () => {
             <Link to="/W" className='NavUl'>Women's</Link>
             <Link to="/K" className='NavUl'>Kid's</Link> */}
 
-              <NavDropdown title="HAPPY" id="navbarScrollingDropdown">
+              <NavDropdown title="HAPPY" >
                 <NavDropdown.Item href="/pants">BOYS</NavDropdown.Item>
                 <NavDropdown.Item href="/pants">GIRLS</NavDropdown.Item>
                 <NavDropdown.Item href="/pants">T-Shirts</NavDropdown.Item>
@@ -57,7 +58,7 @@ const AppNavbar = () => {
                 <NavDropdown.Item href="/pants">Shirts</NavDropdown.Item>
                 <NavDropdown.Item href="/pants">Pant Coat</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="ENJOY" id="navbarScrollingDropdown">
+              <NavDropdown title="ENJOY" >
                 <NavDropdown.Item href="/enjoy">BOYS</NavDropdown.Item>
 
                 <NavDropdown.Item href="/enjoy">GIRLS</NavDropdown.Item>
@@ -68,7 +69,7 @@ const AppNavbar = () => {
                 <NavDropdown.Item href="/enjoy">Shirts</NavDropdown.Item>
                 <NavDropdown.Item href="/enjoy">Pant Coat</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="FUN" id="navbarScrollingDropdown">
+              <NavDropdown title="FUN" >
                 <NavDropdown.Item href="/fun">BOYS</NavDropdown.Item>
                 <NavDropdown.Item href="/fun">GIRLS</NavDropdown.Item>
                 <NavDropdown.Item href="/enjoy">Pants</NavDropdown.Item>
@@ -77,7 +78,7 @@ const AppNavbar = () => {
                 <NavDropdown.Item href="/fun">Shirts</NavDropdown.Item>
                 <NavDropdown.Item href="/fun">Pant Coat</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="BLESS" id="navbarScrollingDropdown">
+              <NavDropdown title="BLESS" >{/*id="navbarScrollingDropdown"> */}
                 <NavDropdown.Item href="/bless">Pants</NavDropdown.Item>
                 <NavDropdown.Item href="/bless">BOYS</NavDropdown.Item>
                 <NavDropdown.Item href="/bless">GIRLS</NavDropdown.Item>
@@ -87,7 +88,7 @@ const AppNavbar = () => {
                 <NavDropdown.Item href="/bless">Shirts</NavDropdown.Item>
                 <NavDropdown.Item href="/bless">Pant Coat</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="BLOKE" id="navbarScrollingDropdown">
+              <NavDropdown title="BLOKE" >
                 <NavDropdown.Item href="/bloke">BOYS</NavDropdown.Item>
 
                 <NavDropdown.Item href="/bloke">GIRLS</NavDropdown.Item>
@@ -97,7 +98,7 @@ const AppNavbar = () => {
                 <NavDropdown.Item href="/bloke">Shirts</NavDropdown.Item>
                 <NavDropdown.Item href="/bloke">Pant Coat</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="LILBEE" id="navbarScrollingDropdown">
+              <NavDropdown title="LILBEE" >
                 <NavDropdown.Item href="/lilbee">BOYS</NavDropdown.Item>
                 <NavDropdown.Item href="/lilbee">GIRLS</NavDropdown.Item>
                 <NavDropdown.Item href="/lilbee">Pants</NavDropdown.Item>
@@ -106,7 +107,7 @@ const AppNavbar = () => {
                 <NavDropdown.Item href="/lilbee">Shirts</NavDropdown.Item>
                 <NavDropdown.Item href="/lilbee">Pant Coat</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="HUNAR" id="navbarScrollingDropdown">
+              <NavDropdown title="HUNAR" >
                 <NavDropdown.Item href="#action3">Pants</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">T-Shirts</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -126,7 +127,8 @@ const AppNavbar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </div>
+  
   );
 };
 

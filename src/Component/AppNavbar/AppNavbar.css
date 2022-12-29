@@ -39,3 +39,10 @@
     border: none !important;
     color: var(--white) !important;
 }
+
+.navfixed{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: -moz-available;
+}

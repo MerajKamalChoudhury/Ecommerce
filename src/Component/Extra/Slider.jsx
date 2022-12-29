@@ -53,7 +53,9 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 100%;
+  width: 100vw;
+  /* background-size:contain; */
   
 `;
 

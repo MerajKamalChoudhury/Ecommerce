@@ -6,16 +6,22 @@ const Sidebar = ({sidebar}) => {
   return (
       <div className={sidebar?"sidebar sidebar--open":"sidebar"}>
         
-        <li>BRANDS</li>
+        <li>ALL</li>
         <li>BOYS</li>
         <li>GIRLS</li>
-        <NavDropdown title="HAPPY" id="navbarScrollingDropdown">
+        <NavDropdown title="BRANDS" id="navbarScrollingDropdown">
              
              <NavDropdown.Item href="/pants">
-               BOYS
+               Happy
              </NavDropdown.Item>
              <NavDropdown.Item href="/pants">
-               GIRLS
+               Enjoy
+             </NavDropdown.Item>
+             <NavDropdown.Item href="/pants">
+               Fun
+             </NavDropdown.Item>
+             <NavDropdown.Item href="/pants">
+               Bless
              </NavDropdown.Item>
         </NavDropdown>     
             
