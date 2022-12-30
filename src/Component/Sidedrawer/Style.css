@@ -24,8 +24,10 @@ body{
 
 .sidebar{
     position: fixed;
-    background-color:#fff;
-    color: rgb(172, 85, 85);
+    background-color:transparent;
+    /* background-color:#fff; */
+    color:#fff;
+    /* color: rgb(172, 85, 85); */
     top: 0;
     left: 0;
     height: 100vh;
@@ -78,12 +80,13 @@ body{
 
 .backdrop--open{
     display: block;
+    
 }
 
-#navbarScrollingDropdown{
+#Dropdown{
     list-style: none;
     padding: 1rem 2rem;
-    border-bottom: solid rgba(255,255,255,0.1) 1px;
+    border-bottom: solid rgba(255, 255, 255, 0.1) 1px;
     display: flex;
     align-items: center;
     gap: 1rem;

@@ -4,12 +4,13 @@ import {NavDropdown} from 'react-bootstrap'
 
 const Sidebar = ({sidebar}) => {
   return (
+    <>
       <div className={sidebar?"sidebar sidebar--open":"sidebar"}>
-        
+      
         <li>ALL</li>
         <li>BOYS</li>
         <li>GIRLS</li>
-        <NavDropdown title="BRANDS" id="navbarScrollingDropdown">
+        <NavDropdown title="BRANDS" id="Dropdown">
              
              <NavDropdown.Item href="/pants">
                Happy
@@ -26,6 +27,7 @@ const Sidebar = ({sidebar}) => {
         </NavDropdown>     
             
       </div>
+      </>
   )
 }
 

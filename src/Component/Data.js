@@ -118,7 +118,7 @@ export const Happpy = [
   export const slider = [
     {
       id:1,
-      img:"./Images/img2.jpg",
+      img:"./Images/zara.jpg",
     },
     {
       id:2,

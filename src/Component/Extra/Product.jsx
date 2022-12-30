@@ -40,6 +40,10 @@ const Container = styled.div`
 const Image = styled.img`
 height: 75%;
 z-index: 2;
+/* &:hover {
+      background-color: #e9f5f5;
+      transform: scale(1.3);
+} */
 `;
 
 const Circle = styled.div`
@@ -61,7 +65,7 @@ const Circle = styled.div`
      transition: all 0.5s ease;
      &:hover {
        background-color: #e9f5f5;
-       transform: scale(1.1);
+       transform: scale(1.3);
      }
    `;
 
