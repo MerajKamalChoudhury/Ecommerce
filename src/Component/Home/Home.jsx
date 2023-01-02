@@ -9,7 +9,10 @@ import Slider from '../Extra/Slider'
 const Home = () => {
   return (
     <>
-    <Slider/> 
+    <Slider/>
+    <div>
+      <img src='./images/ZARA2.jpg'/>
+    </div> 
       <div className="home__main__container">
 
         <div className='home__main__container__left'>

@@ -1,6 +1,6 @@
 import './App.css';
 import AppNavbar from './Component/AppNavbar/AppNavbar'
-import Footer from './Component/Footer/Footer'
+import Footer from './Component/Footer'
 import Home from './Component/Home/Home'
 import ProductDetails from './Component/ProductDetails/ProductDetails'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -28,10 +28,7 @@ function App() {
 
   return (
     <>
-    <AppNavbar/> 
-       
-    
-       
+    <AppNavbar/>  
       <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path='product/:productId' element={<ProductDetails />} />
@@ -46,7 +43,8 @@ function App() {
       {/* <ProductComponent /> */}
      
       {/* <ProductDetails /> */}
-      <Footer />
+      {/* <Footer /> */}
+      <Footer/>
     </>
   );
 }
