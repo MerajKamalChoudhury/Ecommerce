@@ -33,10 +33,6 @@ const AppNavbar = () => {
       left: -10px;
     }
 
-    .dropdown-menu.show{
-      background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    }
 
     .navbar-link {
         &:link,
@@ -101,10 +97,7 @@ const AppNavbar = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              {/* <Link to="/" className='NavUl'>Home</Link>
-            <Link to="/Men" className='NavUl'>Men's</Link>
-            <Link to="/W" className='NavUl'>Women's</Link>
-            <Link to="/K" className='NavUl'>Kid's</Link>  */}
+
 
               <NavDropdown title="HAPPY">
                 {/* <div style={{ backGround: "rgba(255, 255, 255, 0.5)", backdropFilter: "blur(10px)" }}> */}
