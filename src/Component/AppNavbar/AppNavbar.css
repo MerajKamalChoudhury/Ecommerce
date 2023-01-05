@@ -1,49 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
 
-.navbar__logo{
+.navbar__logo {
     text-decoration: none;
     list-style: none;
-    color: var(--light-purple);
-    font-weight: bold;
+    color: black;
+    /* color: indigo; */
+    /* font-weight: bold; */
     font-size: 40px;
-    font-family: 'Rubik Gemstones', cursive;
+    /* font-family: 'Rubik Gemstones', cursive; */
+    font-family: 'Abril Fatface', cursive;
     padding-left: 3rem;
-    
-    
+
+
 }
-.navbar__logo:hover{
+
+.navbar__logo:hover {
     color: var(--black);
 }
-.NavUl
-{
-  margin: 5px 0px;
-  padding: 3px 15px;
-  text-decoration: none;
-  color: #333; 
+
+.NavUl {
+    margin: 5px 0px;
+    padding: 3px 15px;
+    text-decoration: none;
+    color: #333;
 }
-.NavUl:hover
-{
- color: var(--light-purple); 
- font-weight: bold;
+
+.NavUl:hover {
+    color: var(--light-purple);
+    font-weight: bold;
 }
-.navbarColor{
+
+.navbarColor {
     background-color: transparent !important;
     /* background-color: var(--white) !important; */
 }
-.searchBtn{
+
+.searchBtn {
     padding: 0px 30px !important;
     border: 1px solid var(--light-purple) !important;
     color: var(--black) !important;
 }
-.searchBtn:hover{
+
+.searchBtn:hover {
     background-color: var(--light-purple) !important;
     border: none !important;
     color: var(--white) !important;
 }
 
-.navfixed{
+.navfixed {
     position: fixed;
     top: 0;
     z-index: 10;
-    width: -moz-available;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: 0px, 0px, 10px, 0px rgba(0, 0, 0, 0.5); */
+}
+
+.dropdown-menu.show {
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
 }

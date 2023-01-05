@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Alldata } from "../Alldata";
+// import { Alldata } from "../AllPicdata";
 import Product from "../Extra/Product";
 
 
@@ -8,10 +9,12 @@ const Container = styled.div`
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
 `;
 
-const Heading =styled.h1`
+
+const Heading = styled.h1`
     margin: 50px 0;
     display: flex;
     justify-content: center;
@@ -23,18 +26,21 @@ const Heading =styled.h1`
     color: var(--black);
 `;
 
+
+
 const ProductListing = () => {
   return (
-     <>
-    <Heading >
+    <>
+
+      <Heading>
         Features Products
-    </Heading>
-    
-    <Container>
-      {Alldata.map((item) => (
-        <Product item={item} key={item.id} />
-      ))}
-    </Container>
+      </Heading>
+
+      <Container>
+        {Alldata.map((item) => (
+          <Product item={item} key={item.id} />
+        ))}
+      </Container>
     </>
   );
 };
