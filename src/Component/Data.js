@@ -122,11 +122,11 @@ export const slider = [
   },
   {
     id: 2,
-    img: "./Images/imge.jpg",
+    img: "./Images/Zimage9.jpg",
   },
   {
     id: 3,
-    img: "./Images/img4.jpg",
+    img: "./Images/Zimage10.jpg",
   },
 
 ]
