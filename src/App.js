@@ -13,7 +13,8 @@ import Bloke from './Component/Pages/Bloke';
 import Lilbee from './Component/Pages/Lilbee';
 import Hunar from './Component/Pages/Hunar';
 import Pants from './Component/Pages/Pants';
-// import Slider from './Component/Extra/Slider';
+// import Brands from './Component/Home/Brands';
+
 // import Backdrop from './Component/Sidedrawer/Backdrop';
 // import Sidebar from './Component/Sidedrawer/Sidebar';
 // import Toolbar from './Component/Sidedrawer/Toolbar';
@@ -29,6 +30,7 @@ function App() {
   return (
     <>
       <AppNavbar />
+      {/* <Brands /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='product/:productId' element={<ProductDetails />} />
