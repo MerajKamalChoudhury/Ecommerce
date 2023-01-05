@@ -1,0 +1,34 @@
+* {
+    /* font-family: 'Moon Dance', cursive; */
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'Sevillana', cursive; */
+}
+
+.mainButton {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 160px;
+    height: 100vh;
+    margin-top: -627px;
+    margin-left: 77px;
+    z-index: 50;
+}
+
+.all_btn {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    margin: 3px 3px 30px 3px;
+}
+
+.dropdown-menu.show {
+    border: none;
+}
+
+/* .brand_button {
+    font-size: 20px;
+    font-weight: 500;
+} */
