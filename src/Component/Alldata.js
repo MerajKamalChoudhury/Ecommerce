@@ -5,6 +5,7 @@ export const Alldata = [
     title: "happy",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "f5fafd",
+    price: 1050,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const Alldata = [
     title: "AUTUMN COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "fcf1ed",
+    price: 990,
   },
   {
     id: 3,
@@ -19,21 +21,25 @@ export const Alldata = [
     title: "LOUNGEWEAR LOVE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "fbf0f4",
+    price: 1000,
   },
   {
     id: 4,
     img: "https://i.ibb.co/8B4N81X/IMG-20221218-WA0005.jpg",
-    title: "SHIRT STYLE!",
+    title: "SHIRT STYLE",
+    price: 1020,
   },
   {
     id: 5,
     img: "https://i.ibb.co/KFYXHKg/IMG-20221218-WA0006.jpg",
     title: "LOUNGEWEAR LOVE",
+    price: 1030,
   },
   {
     id: 6,
     img: "https://i.ibb.co/q03JH9n/IMG-20221218-WA0007.jpg",
     title: "LIGHT JACKETS",
+    price: 950,
   },
 
   // {
