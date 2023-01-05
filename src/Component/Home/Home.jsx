@@ -1,21 +1,23 @@
 import React from 'react'
 import "./Home.css"
-import AppButton from '../AppButton/AppButton'
+// import AppButton from '../AppButton/AppButton'
 import ProductListing from "../ProductListing/ProductListing"
 import Slider from '../Extra/Slider'
-// import Extra from "../Extra"
+import Brands from './Brands'
 
 
 
 const Home = () => {
   return (
     <>
+
       <Slider />
-      <div style={{ width: "100%" }}>
-        <img src='./images/imge1.jpg' />
+      <Brands />
+      <div>
+        <img src='./images/imge1.jpg' alt='afterSliderImage' style={{ width: "100%" }} />
       </div>
 
-      <div className="home__main__container">
+      {/* <div className="home__main__container">
 
         <div className='home__main__container__left'>
           <div >
@@ -27,14 +29,10 @@ const Home = () => {
         </div>
 
         <div className='home__main__container__right'>
-          {/* <img src='https://i.ibb.co/qk5YRyS/img.jpg' alt='homebg' className='home__main__container__right-img' /> */}
           <img src='./images/home.png' alt='homebg' className='home__main__container__right-img' />
         </div>
-      </div>
-      {/* <Extra /> */}
+      </div> */}
       <ProductListing />
-
-
     </>
   )
 }
