@@ -3,11 +3,12 @@
 .navbar__logo {
     text-decoration: none;
     list-style: none;
-    /* color: var(--light-purple); */
-    color: indigo;
-    font-weight: bold;
+    color: black;
+    /* color: indigo; */
+    /* font-weight: bold; */
     font-size: 40px;
-    font-family: 'Rubik Gemstones', cursive;
+    /* font-family: 'Rubik Gemstones', cursive; */
+    font-family: 'Abril Fatface', cursive;
     padding-left: 3rem;
 
 
