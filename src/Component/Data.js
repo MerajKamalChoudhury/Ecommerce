@@ -118,11 +118,11 @@ export const hunar = [
 export const slider = [
   {
     id: 1,
-    img: "./Images/imge.jpg",
+    img: "./Images/imge2.jpg",
   },
   {
     id: 2,
-    img: "./Images/img3.jpg",
+    img: "./Images/imge.jpg",
   },
   {
     id: 3,
