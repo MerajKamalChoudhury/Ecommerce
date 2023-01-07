@@ -7,9 +7,13 @@ import Product from "../Extra/Product";
 
 const Container = styled.div`
     padding: 20px;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column; */
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     justify-content: space-between;
 `;
 

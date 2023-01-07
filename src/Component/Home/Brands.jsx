@@ -1,5 +1,5 @@
 import './Brands.css'
-
+import { NavLink } from "react-router-dom";
 
 const Brands = () => {
     return (
@@ -10,12 +10,23 @@ const Brands = () => {
                         Happy
                     </button>
                     <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">BOYS</a></li>
-                        <li><a className="dropdown-item" href="#">GIRLS</a></li>
-                        <li><a className="dropdown-item" href="#">T-Shirts</a></li>
+                        <li>
+                            <NavLink to="/pants" className="dropdown-item" style={{ textDecoration: 'none', color: 'black' }}>BOYS</NavLink>
+                            {/* <a className="dropdown-item" href="#"></a> */}
+                        </li>
+                        <li>
+                            <a className="dropdown-item" href="#">GIRLS</a>
+                        </li>
+                        <li>
+                            <a className="dropdown-item" href="#">T-Shirts</a>
+                        </li>
                         {/* <li><hr className="dropdown-divider" /></li> */}
-                        <li><a className="dropdown-item" href="#">Shirts</a></li>
-                        <li><a className="dropdown-item" href="#">Pant Coat</a></li>
+                        <li>
+                            <a className="dropdown-item" href="#">Shirts</a>
+                        </li>
+                        <li>
+                            <a className="dropdown-item" href="#">Pant Coat</a>
+                        </li>
                     </ul>
                 </div>
                 <div className="btn-group dropend all_btn">

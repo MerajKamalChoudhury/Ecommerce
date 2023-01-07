@@ -63,3 +63,28 @@
     background: transparent;
     /* backdrop-filter: blur(10px); */
 }
+
+.navComp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 276px;
+    height: 50px;
+}
+
+.searchUnderline {
+    position: absolute;
+    top: 30px;
+    right: 282px;
+}
+
+.lhNav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+/* .loginNavebar {
+    right: 180px;
+} */

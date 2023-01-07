@@ -13,6 +13,11 @@ import Bloke from './Component/Pages/Bloke';
 import Lilbee from './Component/Pages/Lilbee';
 import Hunar from './Component/Pages/Hunar';
 import Pants from './Component/Pages/Pants';
+
+import Login from "./Component/Pages/Login";
+import Search from "./Component/Pages/Search";
+import Cart from "./Component/Pages/Cart";
+import Help from "./Component/Pages/Help";
 // import Brands from './Component/Home/Brands';
 
 // import Backdrop from './Component/Sidedrawer/Backdrop';
@@ -23,10 +28,6 @@ import Pants from './Component/Pages/Pants';
 // import ProductComponent from "./Component/ProductComponent/ProductComponent"
 
 function App() {
-
-
-
-
   return (
     <>
       <AppNavbar />
@@ -41,6 +42,10 @@ function App() {
         <Route path='/bloke' element={<Bloke />} />
         <Route path='/lilbee' element={<Lilbee />} />
         <Route path='/hunar' element={<Hunar />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/search' element={<Search />} />
+        <Route path='/help' element={<Help />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
       {/* <ProductComponent /> */}
 

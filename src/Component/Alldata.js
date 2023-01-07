@@ -1,11 +1,12 @@
 export const Alldata = [
   {
     id: 1,
-    img: "https://i.ibb.co/SrSngqY/IMG-20221218-WA0002.jpg",
+    // img: "https://i.ibb.co/SrSngqY/IMG-20221218-WA0002.jpg",
+    img: "/images/My_project1.jpg",
     title: "happy",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "f5fafd",
-    price: 1050,
+    price: 2050,
   },
   {
     id: 2,
@@ -18,38 +19,46 @@ export const Alldata = [
   {
     id: 3,
     img: "https://i.ibb.co/8DjQpKL/IMG-20221218-WA0004.jpg",
+    // img: "/images/My_project.jpg",
     title: "LOUNGEWEAR LOVE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "fbf0f4",
-    price: 1000,
+    price: 2500,
   },
   {
     id: 4,
-    img: "https://i.ibb.co/8B4N81X/IMG-20221218-WA0005.jpg",
+    // img: "https://i.ibb.co/8B4N81X/IMG-20221218-WA0005.jpg",
+    img: "/images/Bloke.jpg",
     title: "SHIRT STYLE",
     price: 1020,
   },
   {
     id: 5,
-    img: "https://i.ibb.co/KFYXHKg/IMG-20221218-WA0006.jpg",
+    img: "https://i.ibb.co/SrSngqY/IMG-20221218-WA0002.jpg",
+    // img: "/images/My_project3.jpg",
     title: "LOUNGEWEAR LOVE",
     price: 1030,
   },
   {
     id: 6,
-    img: "https://i.ibb.co/q03JH9n/IMG-20221218-WA0007.jpg",
+    img: "/images/My_project3.jpg",
     title: "LIGHT JACKETS",
     price: 950,
   },
+  {
+    id: 7,
+    img: "/images/My_project5.jpg",
+    title: "LOUNGEWEAR LOVE",
+    price: 1030,
+  },
+  {
+    id: 8,
+    // img: "https://i.ibb.co/rHg5qc1/IMG-20221218-WA0008.jpg",
+    img: "/images/My_project.jpg",
+    title: "LIGHT JACKETS",
+    price: 2550,
+  },
 
-  // {
-  //   id: 7,
-  //   img: "https://i.ibb.co/rHg5qc1/IMG-20221218-WA0008.jpg",
-  // },
-  // {
-  //   id: 8,
-  //   img: "https://i.ibb.co/6vGFF37/IMG-20221218-WA0009.jpg",
-  // },
   // {
   //   id: 9,
   //   img: "https://i.ibb.co/2YcFcw5/IMG-20221218-WA0010.jpg",

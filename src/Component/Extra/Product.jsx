@@ -8,16 +8,18 @@ import styled from "styled-components";
 
 const Info = styled.div`
   opacity: 0;
-  width: 33%;
+    /* width: 33%;
     height: 75.7%;
     position: absolute;
     top: 117px;
-    left: 494px;
-  /* width: 100%;
-  height: 100%;
+    left: 494px; */
+  
+  width: 65%;
+  height: 80.7%;
   position: absolute;
-  top: 0;
-  left: 0; */
+  top: 44px;
+  left: 128px;
+
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
   display: flex;
@@ -29,6 +31,10 @@ const Info = styled.div`
 
 const ImgContainer = styled.div`
   display: grid;
+  /* New Code Added */
+  margin-top: 100px;
+  margin-bottom: 183px;
+  /* New Code Added */
   align-items: center;
   &:hover ${Info}{
     opacity: 1;
@@ -38,8 +44,8 @@ const ImgContainer = styled.div`
 const Container = styled.div`
   flex: 1;
   margin: 5px;
-  min-width: 280px;
-  height: 350px;
+  /* min-width: 280px; */
+  height: 893px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,9 +101,9 @@ position: relative;
 
 
 const Price = styled.div`
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: -30px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -30px;
   /* position: relative; */
   font-size: 20px;
   font-weight: 500;
