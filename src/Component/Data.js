@@ -159,7 +159,7 @@ export const slider = [
   },
   {
     id: 3,
-    img: "./Images/Zimage10.jpg",
+    img: "./Images/Zimage12.jpg",
   },
 
 ]
