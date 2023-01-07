@@ -3,11 +3,11 @@ import {
   Navbar,
   Container,
   Nav,
-  Form,
-  NavDropdown,
-  Button,
+  // Form,
+  // NavDropdown,
+  // Button,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Backdrop from "../Sidedrawer/Backdrop";
 import Sidebar from "../Sidedrawer/Sidebar";
 import Toolbar from "../Sidedrawer/Toolbar";
@@ -17,6 +17,8 @@ import { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi"
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+
+
 
 const AppNavbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -86,90 +88,17 @@ const AppNavbar = () => {
       <Sidebar/>
       <Backdrop/> */}
 
-          <Link to="/" className="navbar__logo">
+          <NavLink to="/" className="navbar__logo">
             HAPPY
-          </Link>
+          </NavLink>
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="mx-auto my-2 my-lg-0"
               style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
-
-
-              {/* <NavDropdown title="HAPPY">
-                <NavDropdown.Item href="/pants">BOYS</NavDropdown.Item>
-                <NavDropdown.Item href="/pants">GIRLS</NavDropdown.Item>
-                <NavDropdown.Item href="/pants">T-Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/pants">Shirts</NavDropdown.Item>
-                <NavDropdown.Item href="/pants">Pant Coat</NavDropdown.Item>
-              </NavDropdown> */}
-              {/* <NavDropdown title="ENJOY" >
-                <NavDropdown.Item href="/enjoy">BOYS</NavDropdown.Item>
-
-                <NavDropdown.Item href="/enjoy">GIRLS</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/enjoy">Pants</NavDropdown.Item>
-                <NavDropdown.Item href="/enjoy">T-Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/enjoy">Shirts</NavDropdown.Item>
-                <NavDropdown.Item href="/enjoy">Pant Coat</NavDropdown.Item>
-              </NavDropdown> */}
-              {/* <NavDropdown title="FUN" >
-                <NavDropdown.Item href="/fun">BOYS</NavDropdown.Item>
-                <NavDropdown.Item href="/fun">GIRLS</NavDropdown.Item>
-                <NavDropdown.Item href="/enjoy">Pants</NavDropdown.Item>
-                <NavDropdown.Item href="/fun">T-Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/fun">Shirts</NavDropdown.Item>
-                <NavDropdown.Item href="/fun">Pant Coat</NavDropdown.Item>
-              </NavDropdown> */}
-
-              {/* <NavDropdown title="BLESS" >
-                <NavDropdown.Item href="/bless">Pants</NavDropdown.Item>
-                <NavDropdown.Item href="/bless">BOYS</NavDropdown.Item>
-                <NavDropdown.Item href="/bless">GIRLS</NavDropdown.Item>
-                <NavDropdown.Item href="/enjoy">Pants</NavDropdown.Item>
-                <NavDropdown.Item href="/bless">T-Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/bless">Shirts</NavDropdown.Item>
-                <NavDropdown.Item href="/bless">Pant Coat</NavDropdown.Item>
-              </NavDropdown> */}
-
-              {/* <NavDropdown title="BLOKE" >
-                <NavDropdown.Item href="/bloke">BOYS</NavDropdown.Item>
-
-                <NavDropdown.Item href="/bloke">GIRLS</NavDropdown.Item>
-                <NavDropdown.Item href="/bloke">Pants</NavDropdown.Item>
-                <NavDropdown.Item href="/bloke">T-Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/bloke">Shirts</NavDropdown.Item>
-                <NavDropdown.Item href="/bloke">Pant Coat</NavDropdown.Item>
-              </NavDropdown> */}
-
-              {/* <NavDropdown title="LILBEE" >
-                <NavDropdown.Item href="/lilbee">BOYS</NavDropdown.Item>
-                <NavDropdown.Item href="/lilbee">GIRLS</NavDropdown.Item>
-                <NavDropdown.Item href="/lilbee">Pants</NavDropdown.Item>
-                <NavDropdown.Item href="/lilbee">T-Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/lilbee">Shirts</NavDropdown.Item>
-                <NavDropdown.Item href="/lilbee">Pant Coat</NavDropdown.Item>
-              </NavDropdown> */}
-
-              {/* <NavDropdown title="HUNAR" >
-                <NavDropdown.Item href="#action3">Pants</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">T-Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">Shirts</NavDropdown.Item>
-                <NavDropdown.Item href="#action5">Pant Coat</NavDropdown.Item>
-              </NavDropdown> */}
-
-            </Nav>
-            <Form className="d-flex">
+              navbarScroll></Nav>
+            {/* <Form className="d-flex">
               <Form.Control
                 type="search"
                 placeholder="Find your best matches"
@@ -177,7 +106,24 @@ const AppNavbar = () => {
                 aria-label="Search"
               />
               <Button variant="outline-success searchBtn">Search</Button>
-            </Form>
+            </Form> */}
+
+            <div className="navComp">
+              <NavLink to="/search" style={{ textDecoration: 'none', color: 'black' }}>
+                <div className="searchNavbar" style={{ cursor: 'pointer' }}>
+                  <span>Search</span>
+                  <span className="searchUnderline">_______________</span>
+                </div>
+              </NavLink>
+              <div className="lhNav">
+                <NavLink to="/login" style={{ textDecoration: 'none', color: 'black' }}>
+                  <div className="loginNavebar" style={{ cursor: 'pointer' }}>Login</div>
+                </NavLink>
+                <NavLink to="/help" style={{ textDecoration: 'none', color: 'black' }}>
+                  <div className="helpNavebar" style={{ cursor: 'pointer' }}>Help</div>
+                </NavLink>
+              </div>
+            </div>
 
             <div className="set-pos" style={{
               marginLeft: '30px',
