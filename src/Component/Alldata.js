@@ -56,7 +56,7 @@ export const Alldata = [
     // img: "https://i.ibb.co/rHg5qc1/IMG-20221218-WA0008.jpg",
     img: "/images/My_project.jpg",
     title: "LIGHT JACKETS",
-    price: 950,
+    price: 2550,
   },
 
   // {
