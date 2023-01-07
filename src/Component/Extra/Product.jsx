@@ -1,8 +1,11 @@
-import {
-  FavoriteBorderOutlined,
-  SearchOutlined,
-  ShoppingCartOutlined,
-} from "@material-ui/icons";
+// import {
+//   FavoriteBorderOutlined,
+//   SearchOutlined,
+//   ShoppingCartOutlined,
+// } from "@material-ui/icons";
+import { BsSearch } from "react-icons/bs";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { FiShoppingCart } from "react-icons/fi"
 import React from 'react'
 import styled from "styled-components";
 
@@ -118,13 +121,13 @@ const Product = ({ item }) => {
         <Image src={item.img} />
         <Info>
           <Icon>
-            <ShoppingCartOutlined />
+            <FiShoppingCart />
           </Icon>
           <Icon>
-            <SearchOutlined />
+            <BsSearch />
           </Icon>
           <Icon>
-            <FavoriteBorderOutlined />
+            <IoMdHeartEmpty />
           </Icon>
         </Info>
         <Textcontainer>
