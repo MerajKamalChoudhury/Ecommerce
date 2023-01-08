@@ -1,8 +1,11 @@
-import {
-  FavoriteBorderOutlined,
-  SearchOutlined,
-  ShoppingCartOutlined,
-} from "@material-ui/icons";
+// import {
+//   FavoriteBorderOutlined,
+//   SearchOutlined,
+//   ShoppingCartOutlined,
+// } from "@material-ui/icons";
+import { BsSearch } from "react-icons/bs";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { FiShoppingCart } from "react-icons/fi"
 import React from 'react'
 import styled from "styled-components";
 
@@ -20,13 +23,19 @@ const Info = styled.div`
   top: 44px;
   left: 128px;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: transparent;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
+
+  /* @media (max-width: 1900px) { 
+    background-color: transparent;
+ 
+  } */
 `;
 
 const ImgContainer = styled.div`
@@ -118,13 +127,13 @@ const Product = ({ item }) => {
         <Image src={item.img} />
         <Info>
           <Icon>
-            <ShoppingCartOutlined />
+            <FiShoppingCart />
           </Icon>
           <Icon>
-            <SearchOutlined />
+            <BsSearch />
           </Icon>
           <Icon>
-            <FavoriteBorderOutlined />
+            <IoMdHeartEmpty />
           </Icon>
         </Info>
         <Textcontainer>

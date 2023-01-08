@@ -1,4 +1,6 @@
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
+// import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+
 import { useState } from "react";
 import styled from "styled-components";
 import { slider } from "../Data";
@@ -59,28 +61,28 @@ const Image = styled.img`
   
 `;
 
-const InfoContainer = styled.div`
-  flex: 1;
-  padding: 50px;
-`;
+// const InfoContainer = styled.div`
+//   flex: 1;
+//   padding: 50px;
+// `;
 
-const Title = styled.h1`
-   font-size: 70px;
-`;
+// const Title = styled.h1`
+//    font-size: 70px;
+// `;
 
-const Desc = styled.p`
-  margin: 50px 0px;
-  font-size: 20px; 
-  font-weight: 500;
-  letter-spacing: 3px;
-`; 
+// const Desc = styled.p`
+//   margin: 50px 0px;
+//   font-size: 20px; 
+//   font-weight: 500;
+//   letter-spacing: 3px;
+// `;
 
-const Button = styled.button`
-  padding: 10px;
-  font-size: 20px;
-  background-color: transparent;
-  cursor: pointer;
-`;
+// const Button = styled.button`
+//   padding: 10px;
+//   font-size: 20px;
+//   background-color: transparent;
+//   cursor: pointer;
+// `;
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -95,7 +97,8 @@ const Slider = () => {
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        <ArrowLeftOutlined />
+        {/* <ArrowLeftOutlined /> */}
+        <FaChevronLeft />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {slider.map((item) => (
@@ -103,16 +106,17 @@ const Slider = () => {
             <ImgContainer>
               <Image src={item.img} />
             </ImgContainer>
-            <InfoContainer>
-              {/* <Title>{item.title}</Title>
+            {/* <InfoContainer> */}
+            {/* <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc> */}
-              {/* <Button>SHOW NOW</Button> */}
-            </InfoContainer>
+            {/* <Button>SHOW NOW</Button> */}
+            {/* </InfoContainer> */}
           </Slide>
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-        <ArrowRightOutlined />
+        {/* <ArrowRightOutlined /> */}
+        <FaChevronRight />
       </Arrow>
     </Container>
   );
