@@ -23,13 +23,19 @@ const Info = styled.div`
   top: 44px;
   left: 128px;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: transparent;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
+
+  /* @media (max-width: 1900px) { 
+    background-color: transparent;
+ 
+  } */
 `;
 
 const ImgContainer = styled.div`
