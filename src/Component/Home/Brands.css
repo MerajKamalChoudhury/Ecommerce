@@ -17,6 +17,12 @@
     z-index: 50;
 }
 
+@media (max-width: 1400px) {
+    .mainButton {
+        margin-top: -530px;
+    }
+}
+
 .all_btn {
     position: absolute;
     align-items: center;
